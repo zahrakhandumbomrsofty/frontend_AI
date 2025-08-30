@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #007aff;
+  --primary-hover-color: #005ecb;
+  --background-color: #f2f5f8;
+  --card-background-color: #ffffff;
+  --text-primary: #1d2c3d;
+  --text-secondary: #5a6b82;
+  --border-color: #e1e8ed;
+  --shadow-color: rgba(29, 44, 61, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+}
+
+.App {
+  text-align: center;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.doctor-header {
+  background-color: var(--card-background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.doctor-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #eaf3ff;
+  margin-right: 2rem;
+}
+
+.doctor-icon-wrapper svg {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.doctor-details {
+  text-align: left;
+}
+
+.doctor-header h1 {
+  margin: 0 0 0.25rem 0;
+  color: var(--text-primary);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.doctor-header p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+}
+
+.patients-section {
+  background-color: var(--card-background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}

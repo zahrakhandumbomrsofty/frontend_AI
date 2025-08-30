@@ -1,0 +1,81 @@
+/* src/components/DocumentUploader.css - NEW FILE */
+
+.document-uploader-container {
+  margin-top: 2rem;
+}
+
+.uploader-prompt {
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.uploader-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.select-file-btn,
+.upload-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+.select-file-btn {
+  background-color: #6c757d;
+  color: white;
+}
+.select-file-btn:hover {
+  background-color: #5a6268;
+}
+
+.upload-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.upload-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover-color);
+}
+
+.upload-btn:disabled {
+  background-color: #ced4da;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.uploader-status {
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.success-icon {
+  color: #28a745;
+}
+
+.error-icon {
+  color: #dc3545;
+}

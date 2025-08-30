@@ -1,0 +1,47 @@
+/* src/components/AIAnalysis.css - NEW FILE */
+
+.ai-analysis-container {
+  /* Inherits .info-card styles, can add specific overrides here if needed */
+  margin-bottom: 2rem;
+}
+
+.analysis-loading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+    padding: 1rem 0;
+}
+
+.analysis-content h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.analysis-content h4 span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.analysis-content p {
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.analysis-content h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.analysis-questions {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.analysis-questions li {
+    margin-bottom: 0.5rem;
+}

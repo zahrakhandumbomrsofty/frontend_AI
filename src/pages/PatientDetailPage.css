@@ -1,0 +1,161 @@
+/* src/pages/PatientDetailPage.css - CLEANED UP */
+
+.detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--primary-hover-color);
+}
+
+.detail-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.patient-header-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: right;
+}
+
+.patient-header-details h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.patient-header-details p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.patient-avatar-small {
+  font-size: 4rem;
+  color: var(--text-secondary);
+}
+
+.patient-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  background-color: var(--card-background-color);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  /* Ensure consistent height for cards within grids */
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  margin-top: 0.5rem;
+}
+
+/* AI Analysis styles have been moved to AIAnalysis.css */
+
+.transcription-layout-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.transcription-layout-grid .transcription-container {
+    margin-top: 0;
+    height: 100%;
+}
+
+.transcription-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 450px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.transcription-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.transcription-history-item:last-child {
+  border-bottom: none;
+}
+
+.transcription-history-item:not(.disabled):hover {
+  background-color: #e9ecef;
+}
+
+.transcription-history-item.active {
+  background-color: #eaf3ff;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.transcription-history-item.disabled {
+  cursor: not-allowed;
+  background-color: #f8f9fa;
+  color: #adb5bd;
+}
+
+.transcription-date {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* --- NEW STYLES FOR ANALYSIS & CHAT GRID --- */
+.analysis-chat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Adjust minwidth for two side-by-side components */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: start; /* Aligns cards to the top of their grid cell */
+}

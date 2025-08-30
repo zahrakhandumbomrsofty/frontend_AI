@@ -1,0 +1,143 @@
+/* The semi-transparent background behind the modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29, 44, 61, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* The modal window itself */
+.modal {
+  background: var(--card-background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 600px;
+  outline: none;
+  position: relative;
+}
+
+/* Modal Header: Title and Close button */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: var(--text-primary);
+}
+
+/* Form Styling */
+.modal-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.modal-form label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.form-icon {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+.modal-form input,
+.modal-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-sizing: border-box; /* Important for consistent sizing */
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-form input:focus,
+.modal-form select:focus {
+  outline: none;
+  background-color: var(--card-background-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* For side-by-side fields like DOB and Gender */
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Modal Actions: Cancel and Submit buttons */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.modal-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn {
+  background-color: #f1f3f5;
+  color: var(--text-secondary);
+}
+.cancel-btn:hover {
+  background-color: #e9ecef;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+.submit-btn:hover {
+  background-color: var(--primary-hover-color);
+  transform: translateY(-2px);
+}

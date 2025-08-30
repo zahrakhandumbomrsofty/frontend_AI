@@ -1,0 +1,130 @@
+/* src/components/Transcription.css - UPDATED WITH CONTINUE BUTTON STYLE */
+
+.transcription-container {
+    margin-top: 3rem;
+    background-color: var(--card-background-color);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.transcription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.transcription-header h2 {
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.control-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.control-btn:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+}
+
+.start-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+.start-btn:not(:disabled):hover {
+    background-color: var(--primary-hover-color);
+}
+
+.stop-btn {
+    background-color: #dc3545;
+    color: white;
+}
+.stop-btn:not(:disabled):hover {
+    background-color: #c82333;
+}
+
+.edit-btn {
+    background-color: #6c757d;
+    color: white;
+}
+.edit-btn:not(:disabled):hover {
+    background-color: #5a6268;
+}
+
+.save-edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+.save-edit-btn:not(:disabled):hover {
+    background-color: #218838;
+}
+
+.transcription-status {
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: right;
+  margin: 0;
+  height: 1.2em;
+  margin-bottom: 1rem;
+}
+
+.transcript-display {
+    flex-grow: 1; /* Allow it to grow to fill space */
+    min-height: 250px;
+    background-color: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    color: var(--text-primary);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: left;
+}
+
+.transcript-display-editor {
+    flex-grow: 1;
+    min-height: 250px;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    color: var(--text-primary);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    outline: none;
+    text-align: left;
+}
+
+/* --- NEW STYLE FOR CONTINUE BUTTON --- */
+.continue-btn {
+    background-color: #ffc107; /* Amber color */
+    color: #212529;
+}
+
+.continue-btn:not(:disabled):hover {
+    background-color: #e0a800;
+}
