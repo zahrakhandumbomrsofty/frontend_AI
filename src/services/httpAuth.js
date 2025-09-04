@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Local auth service base URL (Flask default from task.py runs on 8080)
 const httpAuth = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: 'https://backend-21964697315.europe-west1.run.app/api',
 });
 
 // Attach tokens if present (useful for profile/logout/refresh)
