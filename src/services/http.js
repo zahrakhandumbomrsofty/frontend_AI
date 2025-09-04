@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-  baseURL: 'https://dashboard-api-21964697315.us-central1.run.app/api',
+  baseURL: 'https://backend-21964697315.europe-west1.run.app/api',
 });
 
 http.interceptors.request.use((config) => {
